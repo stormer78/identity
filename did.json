@@ -1,0 +1,73 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://www.w3.org/ns/cid/v1"
+  ],
+  "alsoKnownAs": [
+    "did:webvh:Qmcj4MXVx1VqHwoVpmqXW8ZmPJFUVpiNvKLDcj5YzbmqAL:stormer78.github.io:identity"
+  ],
+  "assertionMethod": [
+    "did:web:stormer78.github.io:identity#key-0"
+  ],
+  "authentication": [
+    "did:web:stormer78.github.io:identity#key-0"
+  ],
+  "controller": "did:webvh:Qmcj4MXVx1VqHwoVpmqXW8ZmPJFUVpiNvKLDcj5YzbmqAL:stormer78.github.io:identity",
+  "id": "did:web:stormer78.github.io:identity",
+  "keyAgreement": [
+    "did:web:stormer78.github.io:identity#key-1",
+    "did:web:stormer78.github.io:identity#key-2",
+    "did:web:stormer78.github.io:identity#key-3"
+  ],
+  "service": [
+    {
+      "id": "did:web:stormer78.github.io:identity#didcomm",
+      "serviceEndpoint": [
+        {
+          "accept": [
+            "didcomm/v2"
+          ],
+          "uri": "did:web:fpp.storm.ws:public-mediator"
+        }
+      ],
+      "type": "DIDCommMessaging"
+    },
+    {
+      "@context": "https://identity.foundation/linked-vp/contexts/v1",
+      "id": "did:web:stormer78.github.io:identity#whois",
+      "serviceEndpoint": "https://stormer78.github.io/identity/whois.vp",
+      "type": "LinkedVerifiablePresentation"
+    },
+    {
+      "id": "did:web:stormer78.github.io:identity#files",
+      "serviceEndpoint": "https://stormer78.github.io/identity/",
+      "type": "relativeRef"
+    }
+  ],
+  "verificationMethod": [
+    {
+      "controller": "did:web:stormer78.github.io:identity",
+      "id": "did:web:stormer78.github.io:identity#key-0",
+      "publicKeyMultibase": "z6MkwdwKx2P9X13goHtcowBBrPFRwqPNcnX1qWd39CnS4yjx",
+      "type": "Multikey"
+    },
+    {
+      "controller": "did:web:stormer78.github.io:identity",
+      "id": "did:web:stormer78.github.io:identity#key-1",
+      "publicKeyMultibase": "z6LSfm5rzpbMAswtQGcweY73EGDBRcLnafkjMMv5AiXnPtQe",
+      "type": "Multikey"
+    },
+    {
+      "controller": "did:web:stormer78.github.io:identity",
+      "id": "did:web:stormer78.github.io:identity#key-2",
+      "publicKeyMultibase": "zDnaeX39i416SbkS7W4TjYpTVME2KDpaGYFtsAHSTDEVcvTjg",
+      "type": "Multikey"
+    },
+    {
+      "controller": "did:web:stormer78.github.io:identity",
+      "id": "did:web:stormer78.github.io:identity#key-3",
+      "publicKeyMultibase": "zQ3shjoprXgkc2hxprimAnUfLuZ9qLM7frc2W4MPfEk7NMiRU",
+      "type": "Multikey"
+    }
+  ]
+}

@@ -1,2 +1,3 @@
 # identity
-Public DID and Other info about myself
+
+Public information relating to myself
